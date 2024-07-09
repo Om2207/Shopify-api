@@ -1,7 +1,7 @@
 <?php
 /**
  * CurlX Lib - v0.0.4
- * @author devblack
+ * @author rundilundlegamera
  */
 class CurlX
 {
