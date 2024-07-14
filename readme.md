@@ -29,9 +29,11 @@ and move billing info to payment req
 
 
 
-with proxy: https://omkumarjha.com/api.php?cc=4355460268796405|09|2030|851&use_proxy=true
+with proxy: https://omdev.pro/api.php?cc=4355460268796405|09|2030|851&use_proxy=true
 
-without proxy: https://omkumarjha.com/api.php?cc=4897831483601460|12|2026|589
+without proxy: https://omdev.pro/api.php?cc=4897831483601460|12|2026|589
 
+
+Variant id extractor : https://omdev.pro/sh.php?shopUrl=https://vminnovations.com
 
 
