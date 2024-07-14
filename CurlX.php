@@ -537,5 +537,5 @@ function createHeaderCallback($headersCallBack) {
 }
 
 /***
- * COD3D BY D3VBL4CK
+ * COD3D BY @rundilundlegamera
  */
