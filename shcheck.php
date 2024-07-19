@@ -53,7 +53,8 @@ function getShopifyProducts($shopUrl) {
             $products[] = [
                 'title' => $product['title'],
                 'price' => floatval($variant['price']),
-                'variant_id' => $variant['id']
+                'variant_id' => $variant['id'],
+                'product_link' => $shopUrl . '/products/' . $product['handle'] . '?variant=' . $variant['id']
             ];
         }
     }
@@ -82,12 +83,14 @@ function formatResponse($minProduct, $maxProduct) {
         'Minimum Priced Product' => [
             'Title' => $minProduct['title'],
             'Price' => '$' . number_format($minProduct['price'], 2),
-            'Variant ID' => $minProduct['variant_id']
+            'Variant ID' => $minProduct['variant_id'],
+            'Product Link' => $minProduct['product_link']
         ],
         'Maximum Priced Product' => [
             'Title' => $maxProduct['title'],
             'Price' => '$' . number_format($maxProduct['price'], 2),
-            'Variant ID' => $maxProduct['variant_id']
+            'Variant ID' => $maxProduct['variant_id'],
+            'Product Link' => $maxProduct['product_link']
         ]
     ], JSON_PRETTY_PRINT);
 }
